@@ -1,0 +1,8 @@
+Package: org.thebigboss.animatedweatherenabler
+Name: Animated Weather Enabler
+Depends: mobilesubstrate, cy+model.iphone (<< 4), firmware (>= 7.0)
+Version: 1.0
+Architecture: iphoneos-arm
+Description: enable weather animation in weather app for iPhone 4
+Author: PoomSmart
+Section: Tweaks

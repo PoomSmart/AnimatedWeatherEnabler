@@ -2,15 +2,19 @@
 
 static BOOL shouldInject = NO;
 
+@interface SBApplication : UIApplication
+- (NSString *)bundleIdentifier;
+@end
+
 %hook SBApplication
 
-- (BOOL)icon:(id)icon launchFromLocation:(int)location
+- (void)setActivationSetting:(id)arg1 flag:(id)arg2
 {
 	shouldInject = NO;
 	NSString *app = [self bundleIdentifier];
 	if ([app isEqualToString:@"com.apple.weather"])
 		shouldInject = YES;
-	return %orig;
+	%orig;
 }
 
 %end

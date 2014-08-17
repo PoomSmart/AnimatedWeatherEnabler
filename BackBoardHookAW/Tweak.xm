@@ -24,7 +24,7 @@
 		[dict setObject:@"/usr/lib/InjectionAW.dylib" forKey:@"DYLD_INSERT_LIBRARIES"];
 		[dict setObject:@"1" forKey:@"DYLD_FORCE_FLAT_NAMESPACE"];
 		BKSApplicationLaunchSettings *newLaunchSettings = [settings launchSettings];
-    	[newLaunchSettings setEnvironment:dict];
+		[newLaunchSettings setEnvironment:dict];
 		[dict release];
 		[settings setLaunchSettings:newLaunchSettings];
 		return %orig(settings);

@@ -1,8 +1,8 @@
-Package: org.thebigboss.animatedweatherenabler
-Name: Animated Weather Enabler
-Depends: mobilesubstrate (>= 0.9.5101), cy+model.iphone (<< 4), firmware (>= 7.0), firmware (<< 8.0)
+Package: com.ps.hqweather
+Name: High Quality Weather
+Depends: mobilesubstrate, firmware (>= 7.0)
 Version: 1.0
 Architecture: iphoneos-arm
-Description: enable weather animation in weather app for iPhone 4
+Description: Weather graphics quality without low end device detection
 Author: PoomSmart
 Section: Tweaks
